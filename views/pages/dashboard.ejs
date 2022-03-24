@@ -1,0 +1,190 @@
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <p class="custom-font-1"><span class="font-weight-bold text-dark">Dashboard > </span>Dashboard</p>
+      </div>
+    </div>
+
+    <h6 class="font-weight-bold custom-font-2">Dashboard</h6>
+    <div class="my-5">
+      <h6 class="font-weight-bold custom-font-3 custom-border-left">&nbsp;List Order</h6>
+      <table class="table custom-font-3" id="topTable">
+        <thead class="thead-secondary custom-color">
+          <tr>
+            <th scope="col" class="text-center">No</th>
+            <th scope="col">User Email</th>
+            <th scope="col">Car</th>
+            <th scope="col">Start Rent</th>
+            <th scope="col">Finish Rent</th>
+            <th scope="col">Price</th>
+            <th scope="col">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% orders.forEach((element, index) => { %> 
+          <tr>
+            <th scope="row" class="text-center"><%= index + 1%> </th>
+            <td><%= element.email %></td>
+            <td><%= element.car %></td>
+            <td><%= element.startRent %></td>
+            <td><%= element.finishRent %></td>
+            <td><%= element.price %></td>
+            <td><%= element.status %></td>
+          </tr>
+          <% }); %>
+        </tbody>
+      </table>
+      
+      <div class="row">
+        <div class="col-md-1 custom-font-1">
+          <span>Limit</span>
+        </div>
+        <div class="col-md-11 custom-font-1">
+          <Span>Jump To Page</Span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-1">
+          <select class="form-select w-75 custom-height-40 rounded px-1 border custom-font-1" aria-label="Default select example">
+            <option selected>10</option>
+            <option value="1">15</option>
+            <option value="2">20</option>
+            <option value="3">25</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <select class="form-select custom-width-100 custom-height-40 rounded px-1 border custom-font-1" aria-label="Default select example">
+            <option selected>1</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+          <span><button class="custom-knock">Go</button></span>
+        </div>
+        <div class="col-md-9 custom-font-1">
+          <section>
+            <div class="d-flex justify-content-end">
+              <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item">
+                    <a class="page-link text-dark" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link text-dark custom-active-page" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link text-dark" href="#">...</a></li>
+                  <li class="page-item"><a class="page-link text-dark" href="#">9</a></li>
+                  <li class="page-item">
+                    <a class="page-link text-dark" href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <h6 class="font-weight-bold custom-font-3 custom-border-left">&nbsp;List Car</h6>
+    <table class="table custom-font-3" id="botTable">
+      <thead class="thead-secondary custom-color">
+        <tr>
+          <th scope="col" class="text-center">No</th>
+          <th scope="col">Name</th>
+          <th scope="col">Category</th>
+          <th scope="col">Price</th>
+          <th scope="col">Start Rent</th>
+          <th scope="col">Finish Rent</th>
+          <th scope="col">Created at</th>
+          <th scope="col">Uploaded at</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% cars.forEach((element, index) => { %> 
+        <tr>
+          <th scope="row" class="text-center"><%= index + 1 %> </th>
+          <td><%= element.nama %></td>
+          <td><%= element.category %></td>
+          <td><%= element.price %></td>
+          <td><%= element.startRent %></td>
+          <td><%= element.finishRent %></td>
+          <td><%= element.createdAt %></td>
+          <td><%= element.updatedAt %></td>
+        </tr>
+        <% }); %> 
+      </tbody>
+    </table>
+      
+    <div class="row">
+      <div class="col-md-1 custom-font-1">
+        <span>Limit</span>
+      </div>
+      <div class="col-md-11 custom-font-1">
+        <Span>Jump To Page</Span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-1">
+        <select class="form-select w-75 custom-height-40 rounded px-1 border custom-font-1" aria-label="Default select example">
+          <option selected>50</option>
+          <option value="1">75</option>
+          <option value="2">100</option>
+          <option value="3">125</option>
+        </select>
+      </div>
+      <div class="col-md-2">
+        <select class="form-select custom-width-100 custom-height-40 rounded px-1 border custom-font-1" aria-label="Default select example">
+          <option selected>1</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+        </select>
+        <span><button class="custom-knock">Go</button></span>
+      </div>
+      <div class="col-md-9 custom-font-1">
+        <section>
+          <div class="d-flex justify-content-end">
+            <nav aria-label="Page navigation example">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link text-dark" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link text-dark custom-active-page" href="#">1</a></li>
+                <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
+                <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
+                <li class="page-item"><a class="page-link text-dark" href="#">...</a></li>
+                <li class="page-item"><a class="page-link text-dark" href="#">9</a></li>
+                <li class="page-item">
+                  <a class="page-link text-dark" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </section>
+      </div>
+    </div>
+</div>

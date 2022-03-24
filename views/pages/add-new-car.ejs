@@ -1,0 +1,68 @@
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <p class="custom-font-1"><span class="font-weight-bold text-dark">Cars > List Car > </span>Add New Car</p>
+      </div>
+    </div>
+    
+    <h6 class="font-weight-bold custom-font-2 mb-4">Add New Car</h6>
+    
+    <div class="row">
+      <div class="col-md-12 bg-white pt-4 pb-3">
+        <form>
+          <div class="form-group row">
+            <label for="inputNama" class="col-sm-2 col-form-label custom-font-1">Nama<span class="custom-red">*</span></label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control custom-font-1 w-25" id="inputNama" placeholder="Nama">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputHarga" class="col-sm-2 col-form-label custom-font-1">Harga<span class="custom-red">*</span></label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control custom-font-1 w-25" id="inputharga" placeholder="Harga">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputImage" class="col-sm-2 col-form-label custom-font-1">Foto<span class="custom-red">*</span></label>
+            <div class="col-sm-10">
+              <div class="w-25 border pt-2 pr-2 d-inline-flex justify-content-between rounded">
+                <span class="name custom-font-1 text-muted ml-2">No file selected</span>&nbsp;
+                <i id="files" class="fa fa-arrow-up-from-bracket custom-fa text-muted"></i>
+                <input type="file" name="" id="">
+              </div>
+              <small id="image" class="form-text text-muted" style="font-size: 10px;">File size max. 2MB</small>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputStart" class="col-sm-2 col-form-label custom-font-1">Start Rent</label>
+            <div class="col-sm-10">
+              <input type="text" readonly class="form-control-plaintext custom-font-1" id="inputStart" value="-">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputFinsih" class="col-sm-2 col-form-label custom-font-1">Finish Rent</label>
+            <div class="col-sm-10">
+              <input type="text" readonly class="form-control-plaintext custom-font-1" id="inputFinish" value="-">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputCreated" class="col-sm-2 col-form-label custom-font-1">Created at</label>
+            <div class="col-sm-10">
+              <input type="text" readonly class="form-control-plaintext custom-font-1" id="inputCreated" value="-">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputUpdated" class="col-sm-2 col-form-label custom-font-1">Updated at</label>
+            <div class="col-sm-10">
+              <input type="text" readonly class="form-control-plaintext custom-font-1" id="inputUpdated" value="-">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    
+    <div class="d-flex justify-content-start mt-5 pt-5">
+      <button class="btn btn-outline-primary mr-2 custom-font-4">Cancel</button>
+      <button class="btn btn-primary custom-font-4">Save</button>
+    </div>
+</div>

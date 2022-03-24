@@ -1,0 +1,44 @@
+/* ---------------------------------------------------
+    DEFAULT CSS
+----------------------------------------------------- */
+*{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+
+
+/* ---------------------------------------------------
+  MY CSS
+----------------------------------------------------- */
+.custom-delete-spacing {
+  background-image: url('../images/image\ 2.png');
+}
+
+.custom-transparency {
+  background-color: #0D28A6;
+  height: 100vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  opacity: 0.3;
+}
+
+.custom-point {
+  height: 100vh;
+}
+
+.custom-font {
+  font-size: 14px;
+}
+
+.custom-logo {
+  width: 100px;
+  height: 34px;
+  background: #CFD4ED;
+}
+
+.custom-sign {
+  background: #0D28A6;
+  font-size: 14px;
+}
